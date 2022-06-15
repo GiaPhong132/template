@@ -29,7 +29,7 @@ if (isset($_POST['insert_row'])) {
     //     $completed = false;
     // }
     // if ($completed) {
-    $sql =  "INSERT INTO user(email, fname, lname, age) VALUES($email, '$fname','$lname', $age, NOW())";
+    $sql =  "INSERT INTO user(email, fname, lname, age, createAt) VALUES($email, '$fname','$lname', $age, NOW())";
     mysqli_query($conn, $sql);
     //     if (mysqli_query($conn, $sql)) {
     //         // echo "New record created successfully";
